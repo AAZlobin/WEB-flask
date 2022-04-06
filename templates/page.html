@@ -43,12 +43,12 @@
 
 
 
-   {% for item in news['news'] %}
+   {% for item in films %}
   <div class="block" id="block">
-        <h2>Фильм {{item["film"]}} вышел в {{item["data"]}} году.</h2>
-        <h2>Оценка пользователей: {{item["mark"]}}.</h2>
+        <h2>Фильм {{item["mov_name"]}} вышел в {{item["year"]}} году.</h2>
+        <h2>Оценка пользователей: {{item["year"]}}.</h2>
         <div>
-            {{item["content"]}}
+            {{item["mov_name"]}}
 
         </div>
     <br>
